@@ -3,34 +3,52 @@ import React from 'react'
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg'
 
 import './styles.css'
+import api from '../../services/api'
 
-function TeacherItem() {
+export interface Teacher {
+    id: number,
+    name: string,
+    avatar: string,
+    bio: string,
+    cost: number,
+    subject: string,
+    whatsapp: string
+}
+
+interface TeacherItemProps {
+    teacher: Teacher
+}
+
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+    function createNewConnection(){
+        api.post('connections', {
+            user_id: teacher.id
+        })
+    }
+    
     return (
         <article className="teacher-item">
             <header>
-                <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/16/161b3f31756ca104e9979b902a4ac939cf4f01a8_full.jpg" alt="Thiago" />
+                <img src={teacher.avatar} alt={teacher.name} />
                 <div>
-                    <strong>Thiago</strong>
-                    <span>Biologia</span>
+                    <strong>{teacher.name}</strong>
+                    <span>{teacher.subject}</span>
                 </div>
             </header>
 
-            <p>
-                Palavras no aleatorio te troxeram aqui.
-            <br /><br />
-            Agora voce vai apreender com fuciona a genetica.
-        </p>
+            <p>{teacher.bio}</p>
 
             <footer>
                 <p>
                     Preço/Hora
-                <strong>R$ 50,00</strong>
+                <strong>R$ {teacher.cost}</strong>
                 </p>
 
-                <button>
+                <a target="_blank" onClick={createNewConnection} href={`https://wa.me/${teacher.whatsapp}`}>
                     <img src={whatsappIcon} alt="whatsapp" />
-                Entrar em contato
-            </button>
+                    Entrar em contato
+                </a>
             </footer>
         </article>
     )
