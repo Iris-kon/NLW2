@@ -32,8 +32,6 @@ The project utilises the following technologies:
 </ul>
 
 ## Run project
-Install  Stripe CLI: https://stripe.com/br.
-
 (Opcional) Install yarn: https://yarnpkg.com/, can use npm.
 
 Copy the project to the desired folder with the following command:
