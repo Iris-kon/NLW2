@@ -1,22 +1,22 @@
 import { Request, Response } from 'express'
 
-import db from '../database/connection'
+import { prisma } from '../lib/prisma'
 
 export default class ConnectionController {
-    async index (resquest: Request, response: Response){
-      const totalConnections = await db('connections').count('* as total')
-      
-      const { total } = totalConnections[0]
+  async index(resquest: Request, response: Response) {
+    const total = await prisma.connections.count()
 
-      return response.json({ total })
-    }
-    async create (resquest: Request, response: Response){
-        const { user_id } = resquest.body
+    return response.json({ total })
+  }
+  async create(resquest: Request, response: Response) {
+    const { user_id } = resquest.body
 
-        await db('connections').insert({
-            user_id
-        })
+    await prisma.connections.create({
+      data: {
+        userId: user_id,
+      },
+    })
 
-        return response.status(201).send()
-    }
+    return response.status(201).send()
+  }
 }

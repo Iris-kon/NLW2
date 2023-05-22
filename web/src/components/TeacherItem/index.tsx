@@ -2,56 +2,62 @@ import React from 'react'
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg'
 
-import './styles.css'
 import api from '../../services/api'
+import './styles.css'
 
 export interface Teacher {
-    id: number,
-    name: string,
-    avatar: string,
-    bio: string,
-    cost: number,
-    subject: string,
+  id: string
+  subject: string
+  cost: number
+  users: {
+    name: string
+    avatar: string
+    bio: string
     whatsapp: string
+  }
 }
 
 interface TeacherItemProps {
-    teacher: Teacher
+  teacher: Teacher
 }
 
-
 const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
-    function createNewConnection(){
-        api.post('connections', {
-            user_id: teacher.id
-        })
-    }
-    
-    return (
-        <article className="teacher-item">
-            <header>
-                <img src={teacher.avatar} alt={teacher.name} />
-                <div>
-                    <strong>{teacher.name}</strong>
-                    <span>{teacher.subject}</span>
-                </div>
-            </header>
+  function createNewConnection() {
+    api.post('connections', {
+      user_id: teacher.id,
+    })
+  }
 
-            <p>{teacher.bio}</p>
+  return (
+    <article className="teacher-item">
+      <header>
+        <img src={teacher.users.avatar} alt={teacher.users.name} />
+        <div>
+          <strong>{teacher.users.name}</strong>
+          <span>{teacher.subject}</span>
+        </div>
+      </header>
 
-            <footer>
-                <p>
-                    Preço/Hora
-                <strong>R$ {teacher.cost}</strong>
-                </p>
+      <p>{teacher.users.bio}</p>
 
-                <a target="_blank" onClick={createNewConnection} href={`https://wa.me/${teacher.whatsapp}`}>
-                    <img src={whatsappIcon} alt="whatsapp" />
-                    Entrar em contato
-                </a>
-            </footer>
-        </article>
-    )
+      <footer>
+        <p>
+          Preço/Hora
+          <strong>R$ {teacher.cost}</strong>
+        </p>
+
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          onClick={createNewConnection}
+          href={`https://wa.me/${teacher.users.whatsapp}`}
+        >
+          <img src={whatsappIcon} alt="whatsapp" />
+          Entrar em contato
+        </a>
+      </footer>
+    </article>
+  )
 }
 
 export default TeacherItem
