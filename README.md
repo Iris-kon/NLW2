@@ -4,18 +4,34 @@ A Study project made for traning the developement of a  a full stack aplication 
 
 The full stack app was build with:
 <ul>
-  <li>Create a API with node/express</li>
-  <li>Create a mobile app with react native</li> 
-  <li>Create a web app with reactJs</li>
-  <li>Knex to manage DB</li>  
+  <li>REST API with node/express</li>
+  <li>mobile</li> 
+  <li>webapp</li>
+  <li>managing DB</li>  
 </ul>
 
 The project was developed in Next level week 2 from Rocketseat.
 
-## Design
-<a href="https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web?node-id=0%3A1">Web</a>
+## Web Screens
 
-<a href="https://www.figma.com/file/e33KvgUpFdunXxJjHnK7CG/Proffy-Mobile?node-id=0%3A1">Mobile</a>
+<b>Home:</b>
+
+![home](https://github.com/Thiago-kon/NLW2/blob/master/web/src/assets/images/design/home.PNG)
+
+<b>Register:</b>
+
+![register](https://github.com/Thiago-kon/NLW2/blob/master/web/src/assets/images/design/register.png)
+
+<b>Study:</b>
+
+![study](https://github.com/Thiago-kon/NLW2/blob/master/web/src/assets/images/design/study.png)
+
+## Mobile Screens
+
+<b>Home:</b>
+
+![home](https://github.com/Thiago-kon/NLW2/blob/master/web/src/assets/images/design/home.PNG)
+
 
 ## Used Technologies
 The project utilises the following technologies:
@@ -27,8 +43,8 @@ The project utilises the following technologies:
   <li>Express</li>
   <li>TypeScript</li>
   <li>CSS</li>
-  <li>Knex</li>
-  <li>Postgres</li>
+  <li>Prisma</li>
+  <li>SQLite</li>
 </ul>
 
 ## Run project
