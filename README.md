@@ -30,8 +30,19 @@ The project was developed in Next level week 2 from Rocketseat.
 
 <b>Home:</b>
 
-![home](https://github.com/Thiago-kon/NLW2/blob/master/web/src/assets/images/design/home.PNG)
+![home](https://github.com/Thiago-kon/NLW2/blob/master/mobile/assets/design/home.jpg)
 
+<b>Give class:</b>
+
+![give-class](https://github.com/Thiago-kon/NLW2/blob/master/mobile/assets/design/give-class.jpg)
+
+<b>Study:</b>
+
+![teach-list](https://github.com/Thiago-kon/NLW2/blob/master/mobile/assets/design/teach-list.jpg)
+
+<b>Favorites:</b>
+
+![home](https://github.com/Thiago-kon/NLW2/blob/master/mobile/assets/design/favorites.jpg)
 
 ## Used Technologies
 The project utilises the following technologies:
