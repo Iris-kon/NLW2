@@ -13,7 +13,12 @@ export default class ConnectionController {
 
     await prisma.connections.create({
       data: {
-        userId: user_id,
+        created_at: new Date(),
+        users: {
+          connect: {
+            id: user_id,
+          },
+        },
       },
     })
 
