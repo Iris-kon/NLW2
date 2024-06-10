@@ -16,33 +16,33 @@ The project was developed in Next level week 2 from Rocketseat.
 
 <b>Home:</b>
 
-![home](https://github.com/Thiago-kon/NLW2/blob/master/web/src/assets/images/design/home.PNG)
+![home](https://github.com/Iris-kon/NLW2/blob/master/web/src/assets/images/design/home.PNG)
 
 <b>Register:</b>
 
-![register](https://github.com/Thiago-kon/NLW2/blob/master/web/src/assets/images/design/register.png)
+![register](https://github.com/Iris-kon/NLW2/blob/master/web/src/assets/images/design/register.png)
 
 <b>Study:</b>
 
-![study](https://github.com/Thiago-kon/NLW2/blob/master/web/src/assets/images/design/study.png)
+![study](https://github.com/Iris-kon/NLW2/blob/master/web/src/assets/images/design/study.png)
 
 ## Mobile Screens
 
 <b>Home:</b>
 
-![home](https://github.com/Thiago-kon/NLW2/blob/master/mobile/assets/design/home.jpg)
+![home](https://github.com/Iris-kon/NLW2/blob/master/mobile/assets/design/home.jpg)
 
 <b>Give class:</b>
 
-![give-class](https://github.com/Thiago-kon/NLW2/blob/master/mobile/assets/design/give-class.jpg)
+![give-class](https://github.com/Iris-kon/NLW2/blob/master/mobile/assets/design/give-class.jpg)
 
 <b>Study:</b>
 
-![teach-list](https://github.com/Thiago-kon/NLW2/blob/master/mobile/assets/design/teach-list.jpg)
+![teach-list](https://github.com/Iris-kon/NLW2/blob/master/mobile/assets/design/teach-list.jpg)
 
 <b>Favorites:</b>
 
-![home](https://github.com/Thiago-kon/NLW2/blob/master/mobile/assets/design/favorites.jpg)
+![home](https://github.com/Iris-kon/NLW2/blob/master/mobile/assets/design/favorites.jpg)
 
 ## Used Technologies
 The project utilises the following technologies:
@@ -63,7 +63,7 @@ The project utilises the following technologies:
 
 Copy the project to the desired folder with the following command:
 
-### `git clone https://github.com/Thiago-kon/NLW2`
+### `git clone https://github.com/Iris-kon/NLW2`
 Install dependences with:
 
 ### `yarn install` to each project
